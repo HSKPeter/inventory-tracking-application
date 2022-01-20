@@ -4,11 +4,13 @@
 * This project is an inventory tracking web application for a logistics company.
 
 ## Features
-* Provides basic CRUD Functionality:
+* Provides basic CRUD Functionaliies:
     * [x] Create inventory items
     * [x] Edit Them
     * [x] Delete Them
     * [x] View a list of them
+
+* Enables user to export product data to a CSV
 
 ## Get Started
 
