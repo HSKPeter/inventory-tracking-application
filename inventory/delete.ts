@@ -11,11 +11,6 @@ export default async function deleteItem(req: Request, res: Response) {
             return;
         }
 
-        // if (!(name && stock && price)) {
-        //     res.status(400).send({ message: "Name, stock quantity and price information are required to edit an item. " });
-        //     return;
-        // }
-
         connectionConfig.database = databaseName
         const connection = await mysql.createConnection(connectionConfig);
         connection.connect();

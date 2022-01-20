@@ -14,8 +14,7 @@ export default async function returnCSV(req: Request, res: Response) {
         const tableName = "inventory";
         const commandToInsertData = "SELECT * FROM " + tableName;
         const queryResult = await connection.query(commandToInsertData);
-        
-        // const csv: IInventoryItem[] = queryResult[0];
+
         const csv = createCSV((queryResult[0] as IInventoryItem[]));
         res.header('Content-Type', 'text/csv');
         res.attachment("data.csv");
