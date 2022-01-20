@@ -10,7 +10,7 @@
     * [x] Delete Them
     * [x] View a list of them
 
-* Enables user to export product data to a CSV
+* Enables user to export product data to CSV format
 
 ## Get Started
 
